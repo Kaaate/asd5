@@ -9,13 +9,13 @@ def heapify(arr, n, i):
     if largest != i:
         arr[i], arr[largest] = arr[largest], arr[i]
         heapify(arr, n, largest)
-def heap_sort(arr):
-    n = len(arr)
+def heap_sort(data):
+    n = len(data)
     for i in range(n // 2, -1, -1):
-        heapify(arr, n, i)
+        heapify(data, n, i)
     for i in range(n - 1, 0, -1):
-        arr[i], arr[0] = arr[0], arr[i]
-        heapify(arr, i, 0)
+        data[i], data[0] = data[0], data[i]
+        heapify(data, i, 0)
 if __name__ == "__main__":
     nums = [-2, -1, 0, 1, 0, -1, -2]
     heap_sort(nums)
