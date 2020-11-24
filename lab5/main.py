@@ -23,7 +23,7 @@ for i in [4,5,6]:
 
     start = time.time()
     merge_sort(data)
-    print(f"Merge sort: {round((time.time()-start)*1000, 3)} ms.\n")
+    print(f"Merge sort: {round((time.time()-start)*1000, 3)} ms.")
 
     start = time.time()
     quick_sort(data.copy())
@@ -45,7 +45,7 @@ for i in [4,5,6]:
 
     start = time.time()
     heap_sort(data)
-    print(f"Heap sort: {round((time.time()-start) * 1000, 3)} ms.\n")
+    print(f"Heap sort: {round((time.time()-start) * 1000, 3)} ms.")
 
     start = time.time()
     quick_sort(data.copy())
